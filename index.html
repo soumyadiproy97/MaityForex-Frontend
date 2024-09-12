@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Maity Forex pvt. ltd.</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .about-us-container {
+            margin-bottom: 1rem;
+        }
+
+        .about-us-text {
+            padding-right: 10px;
+        }
+
+        .rate-chart-container {
+            height: 510px;
+            /* Total height for the container */
+            overflow: hidden;
+            /* Prevent overflow from showing */
+        }
+
+        .rate-chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+            background: #f8f9fa;
+            /* Background color for header */
+            border-bottom: 1px solid #dee2e6;
+            /* Border for separation */
+        }
+
+        .table-container {
+            height: calc(510px - 3rem);
+            /* Adjust based on header height */
+            overflow-y: auto;
+
+        }
+
+        .table thead th {
+            position: sticky;
+            top: 0;
+            background-color: #f8f9fa;
+            /* Background color to ensure visibility */
+            z-index: 1;
+            /* Keeps header above table content */
+        }
+
+        .table-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb {
+            background-color: #00D084;
+            border-radius: 4px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        @media (min-width: 992px) {
+            .navbar-brand {
+                background-color: #f8f8f8;
+                /* Background color for large screens */
+                padding: 0rem 0.9rem !important;
+                /* Add padding for better spacing on large screens */
+                border-radius: 2rem;
+                /* Optional: Add rounded corners */
+            }
+
+            .navbar-brand h2 {
+                color: #00D084;
+                /* Text color for large screens */
+            }
+        }
+
+        .gallery-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .gallery-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            animation: scroll 20s linear infinite;
+        }
+
+        .gallery-container img {
+            width: 250px;
+            margin: 7px;
+        }
+
+        /* Keyframes for continuous scrolling */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* This will make the images repeat smoothly */
+        .gallery-content {
+            animation: scroll 20s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-light px-2 py-1">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 mx-auto text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-flex flex-wrap justify-content-center justify-lg-start">
+                    <!-- <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>8/2, Chowringhee Lane, Kolkata, 700016</a> -->
+                    <a href="tel:+91-9433292115" class="text-muted small me-4"><i
+                            class="fas fa-phone-alt text-primary me-2"></i>+91-9433292115</a>
+                    <a href="mailto:kolkata@maityforex.com" class="text-muted small me-0"><i
+                            class="fas fa-envelope text-primary me-2"></i>kolkata@maityforex.com</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+                <img src="img/logo.png" alt="Logo" class="logo-image me-2">
+                <h2 class="text-primary mb-0">Maity Forex</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="ModeOfPayment.html" class="nav-item nav-link">Mode of payment</a>
+
+                    <a href="kyc.html" class="nav-item nav-link">KYC</a>
+                    <a href="download.html" class="nav-item nav-link">Downloads</a>
+
+                </div>
+                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Contact
+                    Us</a>
+            </div>
+        </nav>
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <!-- <div class="header-carousel-item">
+                    <img src="img/currency2.webp" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-0 gx-5">
+                                <div class="col-lg-0 col-xl-5"></div>
+                                <div class="col-xl-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Maity Forex pvt. ltd.</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Buy or Sell Foreign Currency at Live Exchange Rate</h1>
+                                        <p class="mb-5 fs-5">Maity Forex Pvt. Ltd is a RBI approved full fledge Money Changer and is one of the leading foreign exchange dealers in Kolkata. 
+                                        </p>
+                                        <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                            <h2 class="text-white me-2">Follow Us:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61550053049175&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/maityforex_pvt.ltd?igsh=eXdmNGwweDJpMGJ2" target="_blank"><i class="fab fa-instagram"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <div class="header-carousel-item">
+                <img src="img/currency2.webp" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-12 animated fadeInUp">
+                                <div class="text-center">
+                                    <h1 class="display-4 text-primary text-uppercase fw-bold mb-4">Welcome To Maity
+                                        Forex pvt. ltd.</h1>
+                                    <h4 class=" text-uppercase text-white mb-4">Buy or Sell Foreign Currency at Live
+                                        Exchange Rate</h4>
+                                    <p class="mb-5 fs-5">Maity Forex Pvt. Ltd is a RBI approved full fledge Money
+                                        Changer and is one of the leading foreign exchange dealers in Kolkata.
+                                    </p>
+                                    <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                        <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2"
+                                            href="tel:+91-9433292115"><i class="bi bi-telephone me-1"></i> Call Us</a>
+                                        <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2"
+                                            href="#RateC">Rate Chart</a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <h2 class="text-white me-2">Follow Us:</h2>
+                                        <div class="d-flex justify-content-end ms-2">
+                                            <a class="btn btn-md-square btn-light rounded-circle me-2"
+                                                href="https://www.facebook.com/profile.php?id=61550053049175&mibextid=ZbWKwL"
+                                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            <!-- <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a> -->
+                                            <a class="btn btn-md-square btn-light rounded-circle mx-2"
+                                                href="https://www.instagram.com/maityforex_pvt.ltd?igsh=eXdmNGwweDJpMGJ2"
+                                                target="_blank"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square btn-light rounded-circle ms-2"
+                                                href="https://www.linkedin.com/in/maity-forex-pvt-ltd-07a2422a2"
+                                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Abvout Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div>
+                        <h4 class="text-primary"><strong>About Us</strong></h4>
+                        <h1 class="display-5 mb-4">Turning Currency Challenges into Opportunities with Expertise.</h1>
+                        <p class="mb-4">Maity Forex Private Limited is an unlisted private company incorporated on 28
+                            August, 2018. It is classified as a private limited company and is located in Kolkata, West
+                            Bengal.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="d-flex">
+                                    <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
+                                    <div class="ms-4">
+                                        <h4>Business Consuluting</h4>
+                                        <p>At Maity Forex we are dedicated to provide exceptional foreign exchance
+                                            services.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="d-flex">
+                                    <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div>
+                                    <div class="ms-4">
+                                        <h4>Year Of Expertise</h4>
+                                        <p>With <strong>20+ </strong>years of experience, we have a reputation of being
+                                            reliable</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Learn
+                                    More</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Call Us</h4>
+                                        <p class="mb-0 fs-5" style="letter-spacing: 1px;">+91-9433292115</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 rate-chart-container wow fadeInRight" data-wow-delay="0.2s" id="RateC">
+                    <br>
+                    <div class="header-container row">
+                        <div class="col-md-5 header-title">
+                            <h2 class="text-primary">Rate Chart</h2>
+                        </div>
+                        <div class="col-md-7" id="RC1">
+                            <input style="border: 1px solid #00D084;" type="text" id="searchInput"
+                                class="form-control header-input" placeholder="Enter Currency Code to Search">
+                        </div>
+                    </div>
+                    <br>
+                    <div id="error-message" style="color: red; display: none;">Something went wrong. Please try again
+                        later.</div>
+                    <div class="table-container">
+                        <!-- <input type="text" id="searchInput" placeholder="Search currencies..."> -->
+                        <table id="currencyTable" class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Currency Code</th>
+                                    <th>We Sell</th>
+                                    <th>We Buy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Table rows will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid service pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+
+                <h1 class="text-primary display-5 mb-4">Our Services </h1>
+                <p class="mb-0">We guarantee fast, friendly and efficient services. There are various services in which
+                    we take interest which are as follows.
+                </p>
+            </div>
+
+
+
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/dollar.jpg" class="img-fluid rounded-top w-100 " style="height: 300px;"
+                                alt="Image">
+                        </div>
+                        <div class="rounded-bottom p-4">
+                            <a href="service.html" class="h4 d-inline-block mb-4"> Buying / Selling Foreign
+                                Currencies</a>
+                            <p class="mb-4">We buy/sell foreign currencies at highly competitive rates within the limits
+                                and regulations prescribed by Reserve Bank of India.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/cards3.png" class="img-fluid rounded-top w-100" style="height: 300px;"
+                                alt="Image">
+                        </div>
+                        <div class="rounded-bottom p-4">
+                            <a href="service.html" class="h4 d-inline-block mb-4">Buying / Selling Forex Cards</a><br>
+                            <p class="mb-4">We also deal in Forex Cards.
+                                We offer special prices for the customers preferring to accept payment by Cheque/RTGS.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="service.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid feature pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Our Features</h4>
+                <h2 class="display-5 mb-4">Business to Business</h2>
+
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="feature-item p-4">
+                        <div class="feature-icon p-4 mb-4">
+                            <i class="fas fa-chart-line fa-4x text-primary"></i>
+                        </div>
+                        <h4> Corporate</h4>
+                        <p class="mb-4">When your employees travel abroad, book your forex requirement online, track due
+                            payments, generate letters of forex request etc. Click here for more information.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-item p-4">
+                        <div class="feature-icon p-4 mb-4">
+                            <i class="fas fa-solid fa-globe fa-4x text-primary"></i>
+                        </div>
+                        <h4>Travel Agent</h4>
+                        <p class="mb-4">You can book forex on behalf of your customers, group bookings, and send payment
+                            links to them. Get a live forex rate screen to quote the best forex rates to your customers.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="feature-item p-4">
+                        <div class="feature-icon p-4 mb-4">
+                            <i class="fas fa-regular fa-building fa-4x text-primary"></i>
+                        </div>
+                        <h4>Other Forex Office</h4>
+                        <p class="mb-4">Providing reliable currency exchange services. We supply other forex offices
+                            with a range of currencies. Partner with us for efficient and secure transactions.<br><br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Offer Start -->
+    <div class="container-fluid offer-section pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+
+                <h1 class="display-5 mb-4">Maity Forex Advantages Over Other Forex Vendors</h1>
+
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="nav nav-pills bg-light rounded p-5">
+                        <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                            <h5 class="mb-0">Competitive rates</h5>
+                        </a>
+                        <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                            <h5 class="mb-0">Unparalleled customer service</h5>
+                        </a>
+                        <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                            <h5 class="mb-0">Trust and security</h5>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="tab-content">
+                        <div id="collapseOne" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-md-7">
+                                    <img src="img/offerm2.webp" class="img-fluid w-100 rounded" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <h1 class="display-5 mb-4">Have a look...</h1>
+                                    <p class="mb-4">We understand you need to get the best value for your money. That's
+                                        why we offer highly competitive rates, ensuring you save on unnecessary charges.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-md-7">
+                                    <img src="img/offerm1.webp" class="img-fluid w-100 rounded" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <h1 class="display-5 mb-4">Have a look...</h1>
+                                    <p class="mb-4">Our team of professionals remains committed to offering exceptional
+                                        customer service. We take every step to ensure your foreign exchange
+                                        requirements have efficiency, accuracy, and personalized attention.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseThree" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-md-7">
+                                    <img src="img/offerm3.webp" class="img-fluid w-100 rounded" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <h1 class="display-5 mb-4">Have a look...</h1>
+                                    <p class="mb-4">With us, you can have complete peace of mind knowing that your
+                                        transactions take place in a safe and secure environment. We prioritize the
+                                        privacy and security of your financial information, employing stringent measures
+                                        to protect your data.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+    <!-- Blog Start -->
+
+    <!-- Blog End -->
+
+
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Testimonial</h4>
+                <h1 class="display-5 mb-4">Our Clients Riviews</h1>
+
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/man.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">Maity Forex offers excellent rates and superb service. Quick transactions and
+                            helpful staff make them my top choice for currency exchange.</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Arjun Patel</h4>
+                            <p class="mb-0">Business Executive</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/women.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">Exceptional service and competitive rates. Maity Forex makes currency exchange
+                            effortless with their efficient online platform and professional support team.</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Priya Roy</h4>
+                            <p class="mb-0">Travel Vlogger</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/man.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">Reliable and fast. Maity Forex provides great rates and friendly service,
+                            ensuring a smooth experience for all my foreign exchange needs.</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Ravi Kumar</h4>
+                            <p class="mb-0">Doctor</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/women.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">Maity Forex is my trusted partner for currency exchange. Great rates, easy
+                            process, and excellent customer service every time I use them.</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Sneha Rakshit</h4>
+                            <p class="mb-0">Corporate Manager</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <div class="container  pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h1 class="text-primary display-5 ">Our Gallery</h1>
+
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-content">
+                    <!-- Adding the same images again for a continuous loop -->
+                    <img src="img/Gal/IMG-20240911-WA0010.jpg" alt="Image 1" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0012.jpg" alt="Image 2" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0021.jpg" alt="Image 3" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0022.jpg" alt="Image 4" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0024.jpg" alt="Image 5" style="height: 200px;">
+
+                    <img src="img/Gal/IMG-20240911-WA0023.jpg" alt="Image 5" style="height: 200px;">
+
+                    <!-- Add the same images again to create the loop effect -->
+                    <img src="img/Gal/IMG-20240911-WA0010.jpg" alt="Image 1" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0012.jpg" alt="Image 2" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0021.jpg" alt="Image 3" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0022.jpg" alt="Image 4" style="height: 200px;">
+                    <img src="img/Gal/IMG-20240911-WA0024.jpg" alt="Image 5" style="height: 200px;">
+
+                    <img src="img/Gal/IMG-20240911-WA0023.jpg" alt="Image 5" style="height: 200px;">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-4 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+            <div class="row">
+                <!-- First Column: Text and Opening Hours -->
+                <div class="col-md-4" style="padding-right: 8px;">
+                    <br>
+
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-primary"><img src="img/logo.png" height="60px" alt="Logo"> Maity Forex</h4>
+                        </a>
+                        <p class="mb-4">Transform your money with ease – get the best rates and seamless service at our
+                            currency exchange...</p>
+                    </div>
+                    <div class="footer-item">
+                        <h5 class="text-uppercase mb-3 text-primary">Opening hours</h5>
+                        <table class="table text-white">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td>Mon - Sat:</td>
+                                    <td>9.30 AM - 8 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Second Column: Contact Info -->
+                <br>
+
+                <div class="col-md-4" style="padding-left: 15px;">
+                    <br>
+
+                    <div class="footer-item">
+                        <h4 class="text-primary mb-4">Contact Info</h4>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">8/2, Chowringhee Lane, Kolkata, 700016, West Bengal, India</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">maityforexpvtltd@gmail.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(+91) 9433292115</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fab fa-firefox-browser text-primary me-3"></i>
+                            <p class="text-white mb-0">kolkata@maityforex.com</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="https://www.facebook.com/profile.php?id=61550053049175&mibextid=ZbWKwL"
+                                target="_blank" target="_blank">
+                                <i class="fab fa-facebook-f text-white"></i>
+                            </a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                                href="https://www.instagram.com/maityforex_pvt.ltd?igsh=eXdmNGwweDJpMGJ2"
+                                target="_blank">
+                                <i class="fab fa-instagram text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Third Column: Google Map -->
+                <div class="col-md-4">
+                    <div class="wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="rounded h-100">
+                            <iframe class="rounded w-100" style="height: 350px;"
+                                src="https://maps.google.com/maps?q=%208/1%20a,%20Chowringhee%20Ln,%20Kolkata,%20West%20Bengal%20700016&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-2">
+        <div class="container">
+            <div class="row g-2 align-items-center mx-auto">
+                <div class="col-md-12 text-center text-md-center mb-md-0">
+                    <span class="text-body">
+                        Made with ❤️ in India. Trademarks belong to their respective owners. All rights reserved © 2024
+                        Maity Forex Pvt Ltd.</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <a href="https://wa.me/9433292115" target="_blank" class="btn btn-primary btn-lg-square rounded-circle whats-app"
+        style="color: white"><i class="bi bi-whatsapp"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Assuming you fetch the data from an API
+        let allCurrencyData = [];
+
+// Function to fetch currency data
+async function fetchCurrencyData() {
+    try {
+        const response = await fetch('http://localhost:3000/api/get-rate-card'); // Replace with your API endpoint
+        
+        // Check if response status is OK
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        allCurrencyData = data.result; // Store all data
+        updateTable(allCurrencyData); // Initially display all data
+        document.querySelector('#error-message').style.display = 'none'; // Hide error message if fetch is successful
+    } catch (error) {
+        console.error('Error fetching currency data:', error);
+         // Show error message
+        document.querySelector('#currencyTable').innerHTML = '';
+        
+        document.querySelector('#error-message').style.display = 'block';
+        
+        
+         // Clear table if there's an error
+    }
+}
+
+// Function to update table with given data
+function updateTable(data) {
+    const tableBody = document.querySelector('#currencyTable tbody');
+    tableBody.innerHTML = ''; // Clear existing rows
+
+    data.forEach(item => {
+        const row = document.createElement('tr');
+
+        const codeCell = document.createElement('td');
+        codeCell.textContent = item.currency_code;
+
+        let adjustedB = parseFloat(item.b);
+        let adjustedS = parseFloat(item.s);
+
+        // Apply adjustments based on currency_code
+        if (item.currency_code === 'USD') {
+            adjustedB += 1.0000;
+            adjustedS -= 1;
+        } else if (item.currency_code === 'EUR') {
+            adjustedB += 1.70;
+            adjustedS -= 1.30;
+        } else if (item.currency_code === 'AUD') {
+            adjustedB += 2.00;
+            adjustedS -= 1.20;
+        } else if (item.currency_code === 'JPY') {
+            adjustedB += 0.0050;
+            adjustedS -= 0.0072;
+        } else if (item.currency_code === 'SGD') {
+            adjustedB += 1.50;
+            adjustedS -= 1.00;
+        } else if (item.currency_code === 'CAD') {
+            adjustedB += 2.50;
+            adjustedS -= 1.10;
+        } else if (item.currency_code === 'THB') {
+            adjustedB += 0.03;
+        } else if (item.currency_code === 'GBP') {
+            adjustedB += 2.50;
+            adjustedS -= 1.90;
+        } else if (item.currency_code === 'IDR') {
+            adjustedS -= 0.0003;
+        }
+
+        const bCell = document.createElement('td');
+        bCell.textContent = isNaN(adjustedB) ? '-' : adjustedB.toFixed(4);
+
+        const sCell = document.createElement('td');
+        sCell.textContent = isNaN(adjustedS) ? '-' : adjustedS.toFixed(4);
+
+        row.appendChild(codeCell);
+        row.appendChild(bCell);
+        row.appendChild(sCell);
+
+        tableBody.appendChild(row);
+    });
+}
+
+// Function to filter data based on user input
+function filterCurrencyData() {
+    const searchValue = document.querySelector('#searchInput').value.trim().toUpperCase();
+
+    if (searchValue === '') {
+        updateTable(allCurrencyData); // Show all data if search input is empty
+        return;
+    }
+
+    const filteredData = allCurrencyData.filter(item => item.currency_code.toUpperCase().includes(searchValue));
+    updateTable(filteredData);
+}
+
+// Attach event listener to search input
+document.querySelector('#searchInput').addEventListener('input', filterCurrencyData);
+
+// Fetch data and generate table on page load
+fetchCurrencyData();
+
+
+    </script>
+</body>
+
+</html>
